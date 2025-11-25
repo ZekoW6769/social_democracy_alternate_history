@@ -26,7 +26,9 @@ We have gained +[+ dues +] resources.
 @carry_out_policy
 title: Talking with LFI or France Unbowed
 subtitle: Starts better relations with LFI
-
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; left_strength += 5; kpd_relation += 6*(1-dissent); reformist_dissent += 3; communist_coalition += 1 if kpd_cooperation_seen <= 1; kpd_cooperation_seen += 1
 
 
 @depression
