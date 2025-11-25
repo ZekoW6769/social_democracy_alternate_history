@@ -16,6 +16,11 @@ Ségoléne Royal is a former minister of ecology under prime ministers Cazeneuve
 @plan
 title: Emergency fundraising
 subtitle: Influx of useful resources for the party
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; resources += dues
+
+We have gained +[+ dues +] resources.
 
 
 @carry_out_policy
